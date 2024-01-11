@@ -8,6 +8,7 @@ const Datatable = () => {
   const [data, setData] = useState(userRows);
 
   const handleDelete = (id) => {
+  console.log(id);
     setData(data.filter((item) => item.id !== id));
   };
 
@@ -15,7 +16,7 @@ const Datatable = () => {
     {
       field: "action",
       headerName: "Action",
-      width: 200,
+      width: 140,
       renderCell: (params) => {
         return (
           <div className="cellAction">
@@ -41,13 +42,13 @@ const Datatable = () => {
           Add New
         </Link>
       </div>
+      
       <DataGrid
         className="datagrid"
         rows={data}
         columns={userColumns.concat(actionColumn)}
         pageSize={9}
         rowsPerPageOptions={[9]}
-        checkboxSelection
       />
     </div>
   );

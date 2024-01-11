@@ -1,40 +1,45 @@
 export const userColumns = [
   { field: "id", headerName: "ID", width: 70 },
   {
-    field: "user",
+    field: "username",
     headerName: "User",
-    width: 230,
-    renderCell: (params) => {
-      return (
-        <div className="cellWithImg">
-          <img className="cellImg" src={params.row.img} alt="avatar" />
-          {params.row.username}
-        </div>
-      );
-    },
+    width: 170,
   },
   {
     field: "email",
     headerName: "Email",
-    width: 230,
+    width: 170,
   },
 
   {
     field: "age",
     headerName: "Age",
+    width: 80,
+  },
+  {
+    field: "phoneNumber",
+    headerName: "Phone Number",
+    width: 160,
+  },
+  {
+    field: "specialization",
+    headerName: "Specialization",
+    width: 170,
+  },
+  {
+    field: "qualification",
+    headerName: "Qualification",
+    width: 170,
+  },
+  {
+    field: "charges",
+    headerName: "Charges",
     width: 100,
   },
   {
-    field: "status",
-    headerName: "Status",
-    width: 160,
-    renderCell: (params) => {
-      return (
-        <div className={`cellWithStatus ${params.row.status}`}>
-          {params.row.status}
-        </div>
-      );
-    },
+    field: "timeRanges",
+    headerName: "Time Ranges",
+    width: 170,
   },
 ];
 
@@ -47,6 +52,10 @@ export const userRows = [
     status: "active",
     email: "1snow@gmail.com",
     age: 35,
+    specialization: "Surgeon",
+    qualification: "PhD",
+    charges: 300,
+    timeRanges: "12:00 AM to 4:00 AM", phoneNumber: "1212121212", timestamp: new Date().getTime(),
   },
   {
     id: 2,
@@ -55,6 +64,11 @@ export const userRows = [
     email: "2snow@gmail.com",
     status: "passive",
     age: 42,
+    specialization: "Surgeon",
+    qualification: "PhD",
+    charges: 300,
+    timeRanges: "12:00 AM to 4:00 AM",
+    phoneNumber: "1212121212", timestamp: new Date().getTime(),
   },
   {
     id: 3,
@@ -63,6 +77,10 @@ export const userRows = [
     email: "3snow@gmail.com",
     status: "pending",
     age: 45,
+    specialization: "Surgeon",
+    qualification: "PhD",
+    charges: 300,
+    timeRanges: "12:00 AM to 4:00 AM", phoneNumber: "1212121212", timestamp: new Date().getTime(),
   },
   {
     id: 4,
@@ -71,6 +89,10 @@ export const userRows = [
     email: "4snow@gmail.com",
     status: "active",
     age: 16,
+    specialization: "Surgeon",
+    qualification: "PhD",
+    charges: 300,
+    timeRanges: "12:00 AM to 4:00 AM", phoneNumber: "1212121212", timestamp: new Date().getTime(),
   },
   {
     id: 5,
@@ -79,6 +101,10 @@ export const userRows = [
     email: "5snow@gmail.com",
     status: "passive",
     age: 22,
+    specialization: "Surgeon",
+    qualification: "PhD",
+    charges: 300,
+    timeRanges: "12:00 AM to 4:00 AM", phoneNumber: "1212121212", timestamp: new Date().getTime(),
   },
   {
     id: 6,
@@ -87,6 +113,10 @@ export const userRows = [
     email: "6snow@gmail.com",
     status: "active",
     age: 15,
+    specialization: "Surgeon",
+    qualification: "PhD",
+    charges: 300,
+    timeRanges: "12:00 AM to 4:00 AM", phoneNumber: "1212121212", timestamp: new Date().getTime(),
   },
   {
     id: 7,
@@ -103,6 +133,10 @@ export const userRows = [
     email: "8snow@gmail.com",
     status: "active",
     age: 36,
+    specialization: "Surgeon",
+    qualification: "PhD",
+    charges: 300,
+    timeRanges: "12:00 AM to 4:00 AM", phoneNumber: "1212121212", timestamp: new Date().getTime(),
   },
   {
     id: 9,
@@ -110,7 +144,10 @@ export const userRows = [
     img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     email: "snow@gmail.com",
     status: "pending",
-    age: 65,
+    age: 65, specialization: "Surgeon",
+    qualification: "PhD",
+    charges: 300,
+    timeRanges: "12:00 AM to 4:00 AM", phoneNumber: "1212121212", timestamp: new Date().getTime(),
   },
   {
     id: 10,
@@ -118,6 +155,24 @@ export const userRows = [
     img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     email: "snow@gmail.com",
     status: "active",
-    age: 65,
+    age: 65, specialization: "Surgeon",
+    qualification: "PhD",
+    charges: 300,
+    timeRanges: "12:00 AM to 4:00 AM", phoneNumber: "1212121212", timestamp: new Date().getTime(),
   },
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
