@@ -1,40 +1,45 @@
 export const userColumns = [
   { field: "id", headerName: "ID", width: 70 },
   {
-    field: "user",
+    field: "username",
     headerName: "User",
-    width: 230,
-    renderCell: (params) => {
-      return (
-        <div className="cellWithImg">
-          <img className="cellImg" src={params.row.img} alt="avatar" />
-          {params.row.username}
-        </div>
-      );
-    },
+    width: 170,
   },
   {
     field: "email",
     headerName: "Email",
-    width: 230,
+    width: 170,
   },
 
   {
     field: "age",
     headerName: "Age",
+    width: 80,
+  },
+  {
+    field: "phoneNumber",
+    headerName: "Phone Number",
+    width: 160,
+  },
+  {
+    field: "specialization",
+    headerName: "Specialization",
+    width: 170,
+  },
+  {
+    field: "qualification",
+    headerName: "Qualification",
+    width: 170,
+  },
+  {
+    field: "charges",
+    headerName: "Charges",
     width: 100,
   },
   {
-    field: "status",
-    headerName: "Status",
-    width: 160,
-    renderCell: (params) => {
-      return (
-        <div className={`cellWithStatus ${params.row.status}`}>
-          {params.row.status}
-        </div>
-      );
-    },
+    field: "timeRanges",
+    headerName: "Time Ranges",
+    width: 170,
   },
 ];
 
@@ -56,7 +61,6 @@ export const userRows = [
     email: "2snow@gmail.com",
     status: "passive",
     age: 42,
-
   },
   {
     id: 3,
@@ -65,7 +69,6 @@ export const userRows = [
     email: "3snow@gmail.com",
     status: "pending",
     age: 45,
-
   },
   {
     id: 4,
@@ -74,7 +77,6 @@ export const userRows = [
     email: "4snow@gmail.com",
     status: "active",
     age: 16,
-
   },
   {
     id: 5,
@@ -83,7 +85,6 @@ export const userRows = [
     email: "5snow@gmail.com",
     status: "passive",
     age: 22,
-
   },
   {
     id: 6,
@@ -92,7 +93,6 @@ export const userRows = [
     email: "6snow@gmail.com",
     status: "active",
     age: 15,
-
   },
   {
     id: 7,
@@ -109,7 +109,6 @@ export const userRows = [
     email: "8snow@gmail.com",
     status: "active",
     age: 36,
-
   },
   {
     id: 9,
@@ -134,3 +133,18 @@ export const userRows = [
     timeRanges: "12:00 AM to 4:00 AM",
   },
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
